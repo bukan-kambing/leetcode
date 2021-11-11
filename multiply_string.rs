@@ -31,19 +31,9 @@ impl Solution {
 
                 replace(&mut result[i + j + 1], carry);
                 replace(&mut result[i + j], digit);
-
-                // debugs lots of debugs
-                // println!("{} {}", i, no1.as_bytes()[i] - "0".as_bytes()[0]);
-                // println!("{} {}", i, (no1.as_bytes()[i] - "0".as_bytes()[0]) * 2);
-                // println!("{} {}", i, no1.as_bytes()[i] );
-                // println!("{} {}", i, no1.as_bytes()[i] * 2 );
-                // let mut c = result.clone();
-                // c.reverse();
-                // println!("{} {} {} {} {}", n1, n2, carry, digit, sum);
-                // println!("{:?}", c);
             }
         }
-        // println!("{:?}", result);
+        //
         // reverse vectors then change them sto String
         let result_str: String = result.iter().rev().map(ToString::to_string).collect();
 
@@ -69,8 +59,8 @@ impl Solution {
     }
 }
 
-// fn main() {
-//     let num1 = String::from("123");
-//     let num2 = String::from("456");
-//     println!("{}", Solution::multiply(num1, num2))
-// }
+fn main() {
+    let num1 = String::from("123");
+    let num2 = String::from("456");
+    println!("{}", Solution::multiply(num1, num2))
+}
