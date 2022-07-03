@@ -1,4 +1,4 @@
-package reverseInteger
+package reverseinteger
 
 import "math"
 

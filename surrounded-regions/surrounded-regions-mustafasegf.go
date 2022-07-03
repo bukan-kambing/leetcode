@@ -1,4 +1,4 @@
-package surroundedRegions
+package surroundedregions
 
 /*
   the idea behind it.
