@@ -1,4 +1,4 @@
-package problem130
+package surroundedRegions
 
 /*
   the idea behind it.
